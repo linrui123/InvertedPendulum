@@ -12,7 +12,7 @@ void Encoder_TIM5_Init(){
 	GPIO_Structure.GPIO_Pin=GPIO_Pin_0|GPIO_Pin_1;
 	GPIO_Init(GPIOA,&GPIO_Structure);
 	
-	TIMER_Structure.TIM_Period=65535-1;
+	TIMER_Structure.TIM_Period=65535;
 	TIMER_Structure.TIM_Prescaler=0;
 	TIMER_Structure.TIM_ClockDivision=TIM_CKD_DIV1;
 	TIMER_Structure.TIM_CounterMode=TIM_CounterMode_CenterAligned1;//向上计数
@@ -42,10 +42,10 @@ void Encoder_TIM3_Init(){
 	GPIO_Structure.GPIO_Pin=GPIO_Pin_6|GPIO_Pin_7;
 	GPIO_Init(GPIOA,&GPIO_Structure);
 	
-	TIMER_Structure.TIM_Period=65535-1;
+	TIMER_Structure.TIM_Period=65535;
 	TIMER_Structure.TIM_Prescaler=0;
 	TIMER_Structure.TIM_ClockDivision=TIM_CKD_DIV1;
-	TIMER_Structure.TIM_CounterMode=TIM_CounterMode_CenterAligned1;
+	TIMER_Structure.TIM_CounterMode=TIM_CounterMode_Up;
 	TIM_TimeBaseInit(TIM3,&TIMER_Structure);
 	
 	TIM_EncoderInterfaceConfig(TIM3,TIM_EncoderMode_TI12,TIM_ICPolarity_Rising,TIM_ICPolarity_Rising);

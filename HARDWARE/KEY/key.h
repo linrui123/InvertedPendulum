@@ -3,9 +3,9 @@
 
 #include "stm32f10x.h"
 
-#define KEY0 PCin(5)
-#define KEY1 PAin(15)
-#define KEY2 PAin(0)
+#define KEY0 PEin(2)
+#define KEY1 PEin(3)
+#define KEY2 PEin(4)
 
 void KEY_Init(void);
 

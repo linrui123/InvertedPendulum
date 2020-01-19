@@ -21,11 +21,11 @@ int main(void)
 	USART2_Init(115200);
 	OLED_Init();
 	Encoder_TIM3_Init();
-	Encoder_TIM5_Init();
+//	Encoder_TIM5_Init();
 	TIM4_PWM_Init(7199,99);//计数7200下,周期10ms,10kHz
 	TIM1_Init(99,7199);//计时10ms
-	Angle_ADC_Init();
-	Motor_Init();
+//	Angle_ADC_Init();
+//	Motor_Init();
 	
 	
   while(1)
@@ -33,8 +33,8 @@ int main(void)
 		OLED_Show();
 		LED_indicate();//工作灯指示
 		Set_Pulse();
-		TIM_SetCompare1(TIM4,1000);//right
-		TIM_SetCompare2(TIM4,1000);//left
+//		TIM_SetCompare1(TIM4,7000);//right
+//		TIM_SetCompare2(TIM4,1000);//left
 	}
 }
 

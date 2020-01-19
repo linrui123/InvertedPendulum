@@ -4,11 +4,11 @@
 #include "stm32f10x.h"
 #include "stdlib.h"
 
-#define OLED_CLK_Clr() GPIO_ResetBits(GPIOC,GPIO_Pin_6)
-#define OLED_CLK_Set() GPIO_SetBits(GPIOC,GPIO_Pin_6)
+#define OLED_CLK_Clr() GPIO_ResetBits(GPIOG,GPIO_Pin_8)
+#define OLED_CLK_Set() GPIO_SetBits(GPIOG,GPIO_Pin_8)
 
-#define OLED_SDA_Clr() GPIO_ResetBits(GPIOC,GPIO_Pin_7)
-#define OLED_SDA_Set() GPIO_SetBits(GPIOC,GPIO_Pin_7)
+#define OLED_SDA_Clr() GPIO_ResetBits(GPIOG,GPIO_Pin_15)
+#define OLED_SDA_Set() GPIO_SetBits(GPIOG,GPIO_Pin_15)
 
 #define OLED_CMD 0 //Ð´ÃüÁî
 #define OLED_DATA 1 //Ð´Êý¾Ý

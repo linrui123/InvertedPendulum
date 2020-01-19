@@ -11,6 +11,7 @@ void Set_Direction(u8 dir);
 void Limit_PWM(void);
 void Set_PWM(void);
 int myabs(int a);
+int ReadEncoder(u8 ch);
 
 #endif
 

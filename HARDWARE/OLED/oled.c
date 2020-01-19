@@ -65,14 +65,14 @@ void IIC_Wait_Ack(void){
 void OLED_Init(void){
 	GPIO_InitTypeDef GPIO_Structure;
 	
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC,ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOG,ENABLE);
 	
 	GPIO_Structure.GPIO_Mode=GPIO_Mode_Out_PP;
-	GPIO_Structure.GPIO_Pin=GPIO_Pin_6|GPIO_Pin_7;
+	GPIO_Structure.GPIO_Pin=GPIO_Pin_8|GPIO_Pin_15;
 	GPIO_Structure.GPIO_Speed=GPIO_Speed_50MHz;
-	GPIO_Init(GPIOC,&GPIO_Structure);
-	GPIO_SetBits(GPIOC,GPIO_Pin_6);
-	GPIO_SetBits(GPIOC,GPIO_Pin_7);
+	GPIO_Init(GPIOG,&GPIO_Structure);
+	GPIO_SetBits(GPIOG,GPIO_Pin_8);
+	GPIO_SetBits(GPIOG,GPIO_Pin_15);
 	
 	delay_ms(200);
 	

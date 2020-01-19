@@ -1122,7 +1122,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
 I (..\SYSTEM\delay\delay.h)(0x55CC2E59)
-F (..\CONTROL\control.c)(0x5E24100D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\OLED -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\ENCODER -I ..\HARDWARE\PWM -I ..\HARDWARE\TIMER -I ..\CONTROL -I ..\SHOW -I ..\HARDWARE\USART2 -I ..\HARDWARE\ADC-IE:\资料\大学设计\毕业设计\代码\My_Daolibai\DaoLiBai\USER\RTE-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --omf_browse ..\obj\control.crf --depend ..\obj\control.d)
+F (..\CONTROL\control.c)(0x5E241974)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\OLED -I ..\HARDWARE\LED -I ..\HARDWARE\KEY -I ..\HARDWARE\ENCODER -I ..\HARDWARE\PWM -I ..\HARDWARE\TIMER -I ..\CONTROL -I ..\SHOW -I ..\HARDWARE\USART2 -I ..\HARDWARE\ADC-IE:\资料\大学设计\毕业设计\代码\My_Daolibai\DaoLiBai\USER\RTE-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --omf_browse ..\obj\control.crf --depend ..\obj\control.d)
 I (..\CONTROL\control.h)(0x5E24002F)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
 I (..\CORE\core_cm3.h)(0x4D523B58)

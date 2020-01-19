@@ -6,9 +6,9 @@
 
 int Encoder_Left=0;
 int Encoder_Right=0;
-int speed=0,pulse=0;
+int speed=0,pulse=50;
 float error_c=0,error_l=0,error_ll=0,sum_error=0;
-float P=50,I=300,D=0;
+float P=20,I=300,D=0;
 int pwm=0,tpwm;
 
 int Angle_Value;
@@ -69,10 +69,8 @@ int PID_Position(int Encoder_Num,int Current_Setpulse){//ÔöÁ¿Ê½PID
 	int ierror;
 	int increase;
 	ierror=Encoder_Num-Current_Setpulse;
-//	increase=P*(ierror-error_l)+I*error_l;
-	increase=P*(ierror-error_l)+I*error_l+D*(ierror-2*error_l+error_ll);
+	increase+=P*(ierror-error_l)+I*ierror;
 	error_l=ierror;
-	error_ll=error_l;
 	return increase;
 }
 
